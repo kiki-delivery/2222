@@ -3,10 +3,11 @@ using UnityEngine;
 
 
 /// <summary>
-/// 키넥트 안될경우의 보험(자동 액션 모드)
+/// 혹시 키넥트 안될경우의 보험(자동 액션 모드)
 /// </summary>
 public class AutoMode : MonoBehaviour
 {
+    [Header("이 스크립트 가진애가 켜져있으면 자동 애니메이션")]
 
     [SerializeField]
     Camera mainCamera;  // 

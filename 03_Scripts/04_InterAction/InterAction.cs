@@ -3,8 +3,17 @@ using UnityEngine;
 
 public class InterAction : MonoBehaviour
 {
+    [Header("재생할 애니메이터 다 여기 넣기")]
     [SerializeField]
     Animator[] InteractionAni;
+
+    [Header("재생할 사운드 다 여기 넣기")]
+    [SerializeField]
+    AudioClip[] actionSounds;
+
+    [Header("사운드 수만큼 필요")]
+    [SerializeField]
+    AudioSource[] audios;
 
     [SerializeField]
     LightSwitch lightSwitch;
@@ -23,12 +32,6 @@ public class InterAction : MonoBehaviour
 
     float actionWaitTime;
 
-    [SerializeField]
-    AudioSource[] audios;
-
-    [Header("재생할 사운드 다 여기 넣기")]
-    [SerializeField]
-    AudioClip[] actionSounds;
 
     WaitForSeconds readyTime, lightOffWaitTime, waitAniCheckTime;
     private void Awake()
